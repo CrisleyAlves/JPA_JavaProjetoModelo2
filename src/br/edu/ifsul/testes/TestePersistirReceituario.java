@@ -1,9 +1,9 @@
 package br.edu.ifsul.testes;
 
 import br.edu.ifsul.jpa.EntityManagerUtil;
-import br.edu.iful.modelo.Consulta;
-import br.edu.iful.modelo.Especialidade;
-import br.edu.iful.modelo.Receituario;
+import br.edu.ifsul.modelo.Consulta;
+import br.edu.ifsul.modelo.Especialidade;
+import br.edu.ifsul.modelo.Receituario;
 import java.util.Calendar;
 import javax.persistence.EntityManager;
 

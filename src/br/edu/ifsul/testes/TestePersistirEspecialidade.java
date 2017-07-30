@@ -1,7 +1,7 @@
 package br.edu.ifsul.testes;
 
 import br.edu.ifsul.jpa.EntityManagerUtil;
-import br.edu.iful.modelo.Especialidade;
+import br.edu.ifsul.modelo.Especialidade;
 import javax.persistence.EntityManager;
 
 /**

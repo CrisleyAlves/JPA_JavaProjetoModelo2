@@ -1,4 +1,4 @@
-package br.edu.iful.modelo;
+package br.edu.ifsul.modelo;
 
 import java.io.Serializable;
 import java.util.Objects;

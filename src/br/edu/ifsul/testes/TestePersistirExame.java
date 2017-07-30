@@ -1,8 +1,8 @@
 package br.edu.ifsul.testes;
 
 import br.edu.ifsul.jpa.EntityManagerUtil;
-import br.edu.iful.modelo.Consulta;
-import br.edu.iful.modelo.Exame;
+import br.edu.ifsul.modelo.Consulta;
+import br.edu.ifsul.modelo.Exame;
 import javax.persistence.EntityManager;
 
 /**

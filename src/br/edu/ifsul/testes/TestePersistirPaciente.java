@@ -1,7 +1,7 @@
 package br.edu.ifsul.testes;
 
 import br.edu.ifsul.jpa.EntityManagerUtil;
-import br.edu.iful.modelo.Paciente;
+import br.edu.ifsul.modelo.Paciente;
 import java.util.Calendar;
 import javax.persistence.EntityManager;
 

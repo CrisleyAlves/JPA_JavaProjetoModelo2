@@ -1,10 +1,10 @@
 package br.edu.ifsul.testes;
 
 import br.edu.ifsul.jpa.EntityManagerUtil;
-import br.edu.iful.modelo.Consulta;
-import br.edu.iful.modelo.Especialidade;
-import br.edu.iful.modelo.Medico;
-import br.edu.iful.modelo.Paciente;
+import br.edu.ifsul.modelo.Consulta;
+import br.edu.ifsul.modelo.Especialidade;
+import br.edu.ifsul.modelo.Medico;
+import br.edu.ifsul.modelo.Paciente;
 import java.util.Calendar;
 import javax.persistence.EntityManager;
 
