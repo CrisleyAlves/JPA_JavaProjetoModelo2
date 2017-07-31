@@ -78,6 +78,9 @@ public class Consulta implements Serializable{
     @OneToMany(mappedBy = "consulta", cascade = CascadeType.ALL,fetch = FetchType.LAZY, orphanRemoval = true)
     private List<Exame> listaExames  = new ArrayList<>();
     
+    @OneToMany(mappedBy = "consulta", cascade = CascadeType.ALL,fetch = FetchType.LAZY, orphanRemoval = true)
+    private List<Receituario> listaReceituarios  = new ArrayList<>();
+    
     public Consulta() {
         
     }
@@ -89,6 +92,15 @@ public class Consulta implements Serializable{
     
     public void removerExame(int index){
         this.getListaExames().remove(index);
+    }
+    
+    public void adicionarReceituario(Receituario obj){
+        obj.setConsulta(this);
+        this.getListaReceituarios().add(obj);
+    }
+    
+    public void removerReceituario(int index){
+        this.getListaReceituarios().remove(index);
     }
 
     public Integer getId() {
@@ -170,6 +182,14 @@ public class Consulta implements Serializable{
             return false;
         }
         return true;
+    }
+
+    public List<Receituario> getListaReceituarios() {
+        return listaReceituarios;
+    }
+
+    public void setListaReceituarios(List<Receituario> listaReceituarios) {
+        this.listaReceituarios = listaReceituarios;
     }
     
 }

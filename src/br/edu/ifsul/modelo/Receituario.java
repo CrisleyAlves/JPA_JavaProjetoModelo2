@@ -91,7 +91,7 @@ public class Receituario implements Serializable{
     @Override
     public int hashCode() {
         int hash = 5;
-        hash = 71 * hash + Objects.hashCode(this.id);
+        hash = 71 * hash + Objects.hashCode(this.getId());
         return hash;
     }
 
@@ -111,6 +111,22 @@ public class Receituario implements Serializable{
             return false;
         }
         return true;
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public List<Medicamento> getMedicamentos() {
+        return medicamentos;
+    }
+
+    public void setMedicamentos(List<Medicamento> medicamentos) {
+        this.medicamentos = medicamentos;
     }
     
 }
