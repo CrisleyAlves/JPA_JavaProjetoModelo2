@@ -26,11 +26,21 @@ import org.hibernate.validator.constraints.NotBlank;
 
 /**
  *
- * @author crisley
+ * @author Crisley Alves
+ * @email crisleyalvesphx@gmail.com
+ * @organization IFSUL - Campus Passo Fundo
  */
 @Entity(name = "Consulta")
 @Inheritance(strategy = InheritanceType.JOINED)
 public class Consulta implements Serializable{
+
+    public List<Exame> getListaExames() {
+        return listaExames;
+    }
+
+    public void setListaExames(List<Exame> listaExames) {
+        this.listaExames = listaExames;
+    }
 
     @Id
     @SequenceGenerator(name = "seq_consulta", sequenceName = "seq_consulta_id", allocationSize = 1)
@@ -74,11 +84,11 @@ public class Consulta implements Serializable{
     
     public void adicionarExame(Exame obj){
         obj.setConsulta(this);
-        this.listaExames.add(obj);
+        this.getListaExames().add(obj);
     }
     
     public void removerExame(int index){
-        this.listaExames.remove(index);
+        this.getListaExames().remove(index);
     }
 
     public Integer getId() {

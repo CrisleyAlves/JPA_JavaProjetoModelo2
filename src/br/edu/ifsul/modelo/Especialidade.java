@@ -13,7 +13,9 @@ import org.hibernate.validator.constraints.NotBlank;
 
 /**
  *
- * @author crisley
+ * @author Crisley Alves
+ * @email crisleyalvesphx@gmail.com
+ * @organization IFSUL - Campus Passo Fundo
  */
 @Entity(name = "Especialidade")
 public class Especialidade implements Serializable{
